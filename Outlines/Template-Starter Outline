@@ -1,0 +1,18 @@
+Template Starter 
+
+TODO: Iteration 2, Look at templating environment setups, & projects
+
+[Unfinished]
+1) Install Prereq-tools
+	> RemoteSigned
+	> Git
+2) Clone environment starter repo & run scripts 
+	> Paste & Clone 
+	> Go to directory of cloned project 
+	> Run one installation file: 
+		> Run chocolatey-install/upgrade
+		> Run template-specific-kit
+3) Install software 
+	> Install libraries/frameworks based off parameters <?> 
+	> Run application(s) 
+	> Open summary of additions/updates 

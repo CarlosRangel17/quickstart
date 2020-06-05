@@ -1,0 +1,34 @@
+Project Starter 
+
+TODO: Think about creating a YAML (Yet Another Markup Language)? 
+	> Use Cases
+		* IIS Setup configuration, string[] of sites  
+		* Clone Repo, bool yes or no 
+		* Tools Setup, bool yes or no 
+README.md 
+Project Starter Guide 
+1) Install Prereq-tools
+	> Git (link) 
+2) Install Repository* (Optional) 			| Note: If repo is hosted, we can call scripts via url and need to update script commands
+	> Copy paste and run command git clone apa-quickstart
+		* Clones quick install repository 
+3) Setup Project 
+	> Copy paste and run command  ./project-starter 'param1', 'param2', etc. 
+		* Runs start-transcipt 				| ./start-apa-transcript (Note: Receive parameters for env, proj, template)
+		* Runs remote-signed script			| ./set-remote-signed-policy
+		* Runs chocolatey-install script 	| ./choco-install 
+		* Runs core-project-kit script(s)
+			- Repository					| Note: Optional parameters to specify yes or no to install repo 
+				> Clone Repository			| ./project-repo-setup 
+			- Tools 						| Note: Should determine which project to set up 
+				> Install Packages 			| ./project-packages-install (accepts string list of params <?>) 
+				> TODO: Onboarding Project Automation Workshop 
+			- IIS Setup 
+				> Configure IIS setup 		| Note: Optional parameters to specify yes or no to install iis 
+			- Advanced profiles 			| Note: Optional parameters to specify the powershell file setup to run
+				> Web 						| ./project-developer-web-setup 
+				> Mobile 					| ./project-developer-mobile-setup  
+		* Runs stop-transcipt 				| ./end-apa-transcript
+		* Runs launch-transcript			| ./launch-apa-transcript
+4) Review installation summary 
+	> Launch summary transcript (.txt) of additions/updates 

@@ -1,0 +1,26 @@
+Environment Starter 
+
+README.md 
+Environment Starter Guide 
+1) Install Prereq-tools
+	> Git (link) 
+2) Install Repository* (Optional) 			| Note: If repo is hosted, we can call scripts via url and need to update script commands
+	> Copy paste and run command git clone apa-quickstart
+		* Clones quick install repository 
+3) Setup Environment 
+	> Copy paste and run command ./environment-starter
+		* Runs start-transcipt 				| ./start-apa-transcript (Note: Receive parameters for env, proj, template)
+		* Runs remote-signed script			| ./set-remote-signed-policy
+		* Runs chocolatey-install script 	| ./choco-install 
+		* Runs core-environment-kit script(s)
+			- Core installation 			| ./environment-core-setup
+			- Organization profiles			| Note: Optional parameters to specify the powershell file setup to run 
+				> Developer 				| ./environment-org-developer-setup
+				> QA						| ./environment-org-qa-setup
+			- Advanced profiles 			| Note: Optional parameters to specify the powershell file setup to run
+				> Web 						| ./environment-adv-web-setup 
+				> Mobile 					| ./environment-adv-mobile-setup  
+		* Runs stop-transcipt 				| ./stop-apa-transcript
+		* Runs launch-transcript			| ./launch-apa-transcript
+4) Review installation summary 
+	> Launch summary transcript (.txt) of additions/updates 
